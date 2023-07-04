@@ -3,7 +3,7 @@
 import Joi from "joi"
 
 const signinSchema = Joi.object({
-    name: Joi.string().required(),
+    email: Joi.string(),
     password: Joi.string().min(4).required()
 })
 

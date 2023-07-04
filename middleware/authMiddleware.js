@@ -1,6 +1,6 @@
 import signupSchema from "../schemas/cadastroSchema.js";
 import signinSchema from "../schemas/loginSchema.js";
-
+ 
 export function signupMiddleware(req,res,next){
     const user = req.body
     const validateUser = signupSchema.validate(user, {abortEarly: false})
